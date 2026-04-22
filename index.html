@@ -6,8 +6,33 @@
     <title>index</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body>
-    <h1>The structure has been situp</h1>
+  <body class="bg-white">
+    <div class="container mx-auto flex flex-col space-y-10">
+      <header class="px-5 py-3 flex justify-between items-center text-gray-900">
+        <div class="w-10/12">
+        <ul class="flex text-sm justify-between">
+          <li class="nav-links"><a href="#home">Home</a></li>
+          <li class="nav-links"><a href="#about">About Me</a></li>
+          <li class="nav-links"><a href="#skills">Skills</a></li>
+          <li class="nav-links"><a href="#projects">Projects</a></li>
+          </div>
+          <div class="w-2/12 flex justify-end">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+          </div>
+          <!-- <li class="nav-links">Contact</li> -->
+          <!-- <li class="nav-links">Download CV</li> -->
+        </ul>
+      </header>
+      <section class="grid-cols-12 space-y-10 text-gray-900" id="home">
+            <div class="border-2 border-blue-700 size-50 col-span-12 mx-auto rounded-full"></div>
+            <div class="mx-5">
+                <p class="leading-0 flex flex-col space-y-2"><span class="text-xs">A Front-End Developer who </span><br><span class="text-xl font-bold text-indigo-600"> sees the code through the pixels...</span> <br> <span class="text-xs">Because if the bridge between the data and the user is broken, the journey never starts</span></p>
+            </div>
+      </section>
+    </div>
     <script src="./src/main.js"></script>
   </body>
 </html>

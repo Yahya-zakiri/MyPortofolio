@@ -3,9 +3,23 @@
 
 @layer components{
     .about-me-blocks{
-        @apply max-w-[350px] px-5 py-3 mx-auto rounded-2xl bg-sky-50 text-gray-900 my-5;
+        @apply max-w-[350px] px-5 py-3 mx-auto rounded-2xl bg-gradient-to-r from-sky-50 via-slate-100 to-white text-gray-900 my-5;
     }
     .about-me-blocks h3{
         @apply font-bold text-2xl text-gray-900;
     }
+    .titles {
+        @apply text-xl text-center font-bold mb-5; 
+    }
+    .skills {
+        @apply font-bold px-3 flex flex-col;
+    }
+    .filler-container {
+    @apply h-2 w-full bg-sky-50 rounded-full overflow-hidden relative;
+}
+
+.filler-container::before {
+    @apply content-[''] block w-[50%] h-full bg-gradient-to-r from-indigo-600 via-indigo-500 to-blue-500 rounded-full relative z-0;
+}
+
 }

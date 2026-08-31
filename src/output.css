@@ -218,9 +218,6 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .size-6 {
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
@@ -229,14 +226,8 @@
     width: calc(var(--spacing) * 50);
     height: calc(var(--spacing) * 50);
   }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
   .w-2\/12 {
     width: calc(2 / 12 * 100%);
-  }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
   }
   .w-10\/12 {
     width: calc(10 / 12 * 100%);
@@ -244,17 +235,8 @@
   .w-full {
     width: 100%;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -318,10 +300,6 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -368,27 +346,11 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .text-blue-500 {
-    color: var(--color-blue-500);
-  }
-  .text-blue-600 {
-    color: var(--color-blue-600);
-  }
   .text-blue-700 {
     color: var(--color-blue-700);
   }
   .text-gray-900 {
     color: var(--color-gray-900);
-  }
-  .text-indigo-600 {
-    color: var(--color-indigo-600);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
 }
 @layer components {
@@ -476,11 +438,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-gradient-position {
   syntax: "*";
   inherits: false;
@@ -535,7 +492,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
       --tw-gradient-via: #0000;

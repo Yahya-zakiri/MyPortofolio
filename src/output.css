@@ -9,7 +9,6 @@
       "Courier New", monospace;
     --color-sky-50: oklch(97.7% 0.013 236.62);
     --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-indigo-500: oklch(58.5% 0.233 277.117);
     --color-indigo-600: oklch(51.1% 0.262 276.966);
@@ -418,6 +417,63 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
     --tw-content: '';
     content: var(--tw-content);
+  }
+  .project-card {
+    margin-inline: auto;
+    margin-block: calc(var(--spacing) * 5);
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+    border-radius: var(--radius-2xl);
+    background-color: var(--color-sky-50);
+    padding-inline: calc(var(--spacing) * 5);
+    padding-block: calc(var(--spacing) * 3);
+    color: var(--color-gray-900);
+  }
+  .project-card figure {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: var(--radius-2xl);
+    border-top-right-radius: var(--radius-2xl);
+  }
+  .project-card .more-button {
+    display: flex;
+    height: calc(var(--spacing) * 10);
+    width: calc(var(--spacing) * 24);
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-2xl);
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+    --tw-gradient-from: var(--color-indigo-600);
+    --tw-gradient-via: var(--color-indigo-500);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+    --tw-gradient-to: var(--color-blue-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    color: var(--color-white);
+  }
+  .project-card figcaption {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-900);
+  }
+  .project-card img {
+    width: 100%;
+    border-top-left-radius: var(--radius-2xl);
+    border-top-right-radius: var(--radius-2xl);
   }
 }
 @property --tw-space-y-reverse {

@@ -22,4 +22,21 @@
     @apply content-[''] block w-[50%] h-full bg-gradient-to-r from-indigo-600 via-indigo-500 to-blue-500 rounded-full relative z-0;
 }
 
+.project-card {
+    @apply max-w-[350px] px-5 py-3 mx-auto rounded-2xl bg-sky-50 text-gray-900 my-5 flex flex-col justify-center items-center space-y-3;
+
+}
+
+.project-card figure{
+    @apply w-full flex flex-col justify-center items-center rounded-t-2xl;
+}
+.project-card .more-button{
+    @apply bg-gradient-to-r from-indigo-600 via-indigo-500 to-blue-500 w-24 h-10 flex justify-center items-center text-white rounded-2xl;
+}
+.project-card figcaption{
+    @apply font-bold text-sm text-gray-900;
+}
+.project-card img{
+    @apply w-full rounded-t-2xl ;
+}
 }
